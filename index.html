@@ -46,7 +46,7 @@ h3{font-size:1.05rem;margin:34px 0 12px}
 .danger-title{display:flex;align-items:center;gap:10px}
 .dot{width:9px;height:9px;border-radius:50%;display:inline-block;background:currentColor;box-shadow:0 0 12px currentColor}
 .redtxt{color:var(--red)} .greentxt{color:var(--green)} .yellowtxt{color:var(--yellow)}
-.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:30px 0}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:30px 0}
 .flow .step{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
 .flow .step:after{content:"→";position:absolute;right:-10px;top:50%;transform:translateY(-50%);
   color:var(--green);font:700 1.1rem var(--mono);z-index:2}
@@ -131,12 +131,17 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
 
 <section>
   <div class="section-head"><span class="num">00</span><h2>まず、ここだけ読んでください</h2></div>
-  <p class="lead">使い方はシンプルです。<b>機体をつなぐ → 通電前チェック → 低い電流から通電 → 数値を見る → 止めてから外す。</b></p>
+  <p class="lead">順番が大切です。<b>充電器をつなぐ → 設定する → 機体をつなぐ → 通電前チェック → 低い電流から通電。</b>止めてから機体を外します。</p>
   <div class="flow">
     <div class="step"><em>01</em><b>USB-C PDを接続</b></div>
-    <div class="step"><em>02</em><b>通電前チェック</b></div>
-    <div class="step"><em>03</em><b>0.5Aから通電</b></div>
-    <div class="step"><em>04</em><b>数値を確認</b></div>
+    <div class="step"><em>02</em><b>電流と電圧を設定</b></div>
+    <div class="step"><em>03</em><b>機体を接続</b></div>
+    <div class="step"><em>04</em><b>通電前チェック</b></div>
+    <div class="step"><em>05</em><b>0.5Aから通電</b></div>
+  </div>
+  <div class="alert">
+    <b>機体をつなぐのは、設定を済ませてから</b>
+    <p>先に充電器を接続して電流上限と電圧を決め、そのあとで機体をつなぎます。機体を外すときは、必ずボタンで出力を止めてからにしてください。</p>
   </div>
   <div class="alert red">
     <div class="danger-title"><span class="dot redtxt"></span><b>最重要：機体をつないだまま、入力電源を抜き差ししない</b></div>
