@@ -200,7 +200,7 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
     <tr><td class="mono">03</td><td>XT30出力</td><td>XT30機体用。XT60と同じ出力。<b>同時接続不可</b></td></tr>
     <tr><td class="mono">04</td><td>表示部</td><td>電流・電圧・状態を表示</td></tr>
     <tr><td class="mono">05</td><td>コントローラー</td><td>側面USB-Cは記録用。通電には使用しない</td></tr>
-    <tr><td class="mono">06</td><td>ダイヤル</td><td>回して選択、押して決定</td></tr>
+    <tr><td class="mono">06</td><td>ダイヤル</td><td>回して選択、<b>押し込んで</b>決定。押し込みスイッチを内蔵しています</td></tr>
     <tr><td class="mono">07</td><td>ボタン</td><td>通電・停止・遮断解除・通電前チェック</td></tr>
     <tr><td class="mono">08</td><td>ランプ</td><td>緑・黄・赤で状態を表示</td></tr>
   </table></div>
@@ -353,9 +353,13 @@ SHORT  hold=force</pre></div>
     <tr><td>ボタンを押す</td><td class="mono">READY</td><td>通電</td></tr>
     <tr><td>ボタンを押す</td><td>通電中</td><td>停止</td></tr>
     <tr><td>ボタンを押す</td><td>遮断後</td><td>遮断を解除して待機へ</td></tr>
+    <tr><td>ボタンを押す</td><td>チェック結果の表示中</td><td>通電。<b><span class="code">SHORT</span> のときは受け付けません</b></td></tr>
+    <tr><td>ボタンを押す</td><td>設定画面</td><td>変更を取り消して待機へ戻る</td></tr>
     <tr><td>ボタン長押し</td><td class="mono">READY</td><td>約1秒押してから<b>離すと</b>通電前チェック開始</td></tr>
+    <tr><td>ボタン長押し</td><td>チェック結果の表示中</td><td><span class="code">SHORT</span> でも強行して通電</td></tr>
     <tr><td>ダイヤルを押す</td><td class="mono">READY / 通電中</td><td>設定画面へ。<b>通電中の場合は出力が切れます</b></td></tr>
-    <tr><td>ダイヤルを押す</td><td>設定画面</td><td>次の項目へ進む</td></tr>
+    <tr><td>ダイヤルを押す</td><td>設定画面</td><td>次の項目へ。<b>最後の項目で決定し、待機へ戻ります</b></td></tr>
+    <tr><td>ダイヤルを押す</td><td>チェック結果の表示中</td><td>通電せず待機へ戻る</td></tr>
     <tr><td>ダイヤルを回す</td><td>設定画面</td><td>値を変更</td></tr>
   </table></div>
   <div class="alert">
