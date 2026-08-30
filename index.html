@@ -131,13 +131,13 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
 
 <section>
   <div class="section-head"><span class="num">00</span><h2>まず、ここだけ読んでください</h2></div>
-  <p class="lead">順番が大切です。<b>充電器をつなぐ → 設定する → 機体をつなぐ → 通電前チェック → 低い電流から通電。</b>止めてから機体を外します。</p>
+  <p class="lead">順番が大切です。<b>充電器をつなぐ → 設定する → 機体をつなぐ → ボタンを短く押してチェック → もう一度押して通電。</b>止めてから機体を外します。</p>
   <div class="flow">
     <div class="step"><em>01</em><b>USB-C PDを接続</b></div>
     <div class="step"><em>02</em><b>電流と電圧を設定</b></div>
     <div class="step"><em>03</em><b>機体を接続</b></div>
     <div class="step"><em>04</em><b>通電前チェック</b></div>
-    <div class="step"><em>05</em><b>0.5Aから通電</b></div>
+    <div class="step"><em>05</em><b>もう一度押して通電</b></div>
   </div>
   <div class="alert">
     <b>機体をつなぐのは、設定を済ませてから</b>
@@ -228,8 +228,8 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
     <li><div><b>電流上限を設定</b><span>ダイヤルを押して <span class="code">CURRENT LIMIT</span> を表示。回して選択します。初期値は <span class="code">0.5A</span>。</span></div></li>
     <li><div><b>電圧を設定</b><span>もう一度ダイヤルを押して <span class="code">USB-C PD</span>。機体のセル数に近い電圧を選び、押して決定。</span></div></li>
     <li><div><b>機体を接続</b><span>XT60またはXT30の<b>どちらか一方</b>だけに接続します。</span></div></li>
-    <li><div><b>通電前チェック</b><span>ボタンを約1秒長押しして離します。<span class="code">OK</span>なら通電、<span class="code">SHORT</span>なら通電せず原因を確認。</span></div></li>
-    <li><div><b>通電</b><span>ボタンを押します。緑点滅（立ち上げ中）→緑点灯（通電中）なら正常です。</span></div></li>
+    <li><div><b>通電前チェック</b><span>ボタンを短く押します。<span class="code">OK</span>ならもう一度短く押して通電、<span class="code">SHORT</span>なら通電せず原因を確認。</span></div></li>
+    <li><div><b>通電</b><span>チェック結果の画面でボタンを短く押します。緑点滅（立ち上げ中）→緑点灯（通電中）なら正常です。</span></div></li>
     <li><div><b>数値を見る</b><span>現在電流、<span class="code">PK</span>、<span class="code">LOAD</span>を確認。正常な機体の値と比較します。</span></div></li>
     <li><div><b>停止してから機体を外す</b><span>ボタンを押して出力を停止。<b>停止確認後に</b>機体を取り外してください。</span></div></li>
   </ol>
@@ -285,7 +285,7 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
   <div class="display"><pre>PRE-POWER CHECK
  0.9R
 SHORT  hold=force</pre></div>
-  <p class="caption">ボタンを長押しして離すと開始。結果表示後、ボタンで通電／ダイヤルで中止。</p>
+  <p class="caption">ボタンを短く押すと開始。結果表示後、ボタンで通電／ダイヤルで中止。</p>
   <div class="tw"><table>
     <tr><th>表示</th><th>意味</th><th>対応</th></tr>
     <tr><td class="mono">OPEN</td><td>何もつながっていない</td><td>機体が接続されているか確認</td></tr>
@@ -350,12 +350,12 @@ SHORT  hold=force</pre></div>
   <div class="section-head"><span class="num">10</span><h2>ボタンとダイヤル</h2></div>
   <div class="tw"><table>
     <tr><th>操作</th><th>状態</th><th>動作</th></tr>
-    <tr><td>ボタンを押す</td><td class="mono">READY</td><td>通電</td></tr>
+    <tr><td>ボタンを押す</td><td class="mono">READY</td><td>通電前チェックを開始</td></tr>
     <tr><td>ボタンを押す</td><td>通電中</td><td>停止</td></tr>
     <tr><td>ボタンを押す</td><td>遮断後</td><td>遮断を解除して待機へ</td></tr>
     <tr><td>ボタンを押す</td><td>チェック結果の表示中</td><td>通電。<b><span class="code">SHORT</span> のときは受け付けません</b></td></tr>
     <tr><td>ボタンを押す</td><td>設定画面</td><td>変更を取り消して待機へ戻る</td></tr>
-    <tr><td>ボタン長押し</td><td class="mono">READY</td><td>約1秒押してから<b>離すと</b>通電前チェック開始</td></tr>
+    <tr><td>ボタン長押し</td><td class="mono">READY</td><td>約1秒押してから<b>離すと</b>チェックを飛ばして通電</td></tr>
     <tr><td>ボタン長押し</td><td>チェック結果の表示中</td><td><span class="code">SHORT</span> でも強行して通電</td></tr>
     <tr><td>ダイヤルを押す</td><td class="mono">READY / 通電中</td><td>設定画面へ。<b>通電中の場合は出力が切れます</b></td></tr>
     <tr><td>ダイヤルを押す</td><td>設定画面</td><td>次の項目へ。<b>最後の項目で決定し、待機へ戻ります</b></td></tr>
@@ -363,8 +363,8 @@ SHORT  hold=force</pre></div>
     <tr><td>ダイヤルを回す</td><td>設定画面</td><td>値を変更</td></tr>
   </table></div>
   <div class="alert">
-    <b>ボタンは「離した瞬間」に効きます</b>
-    <p>短く押せば通電の開始・停止、約1秒以上押してから離すと通電前チェックです。押している間は何も起きません。</p>
+    <b>短押しは「安全な側」、長押しは「飛ばす」</b>
+    <p>ボタンは離した瞬間に効きます。<b>短く押すと通電前チェック</b>、<b>約1秒以上押してから離すと通電</b>です。誤って触れても、いきなり電気が流れることはありません。</p>
   </div>
 </section>
 
