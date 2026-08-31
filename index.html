@@ -227,8 +227,8 @@ footer{padding:0 0 90px;color:#5f6c78;font:700 .68rem var(--mono);letter-spacing
     <p class="say">はんだのブリッジ、裏返したコンデンサ、配線のミス。
     組み上がったばかりの機体には、目で追いきれない失敗が残っています。
     バッテリーを挿せば、それが一瞬で煙になる。</p>
-    <p class="pull">電流を絞れば、守れる。<br>
-    ただそれだけでは、<i>何が起きたのかは分からない。</i></p>
+    <p class="pull">うまくいけば、何も起きない。<br>
+    外れたときだけ、<i>取り返しがつかない。</i></p>
     <div class="who">
       <span>自作機を組む人へ</span><span>ESC・FCの載せ替えに</span><span>中古機の受け入れ確認に</span>
     </div>
@@ -351,7 +351,7 @@ footer{padding:0 0 90px;color:#5f6c78;font:700 .68rem var(--mono);letter-spacing
       <div class="label">Measure</div>
       <h2>「たぶん大丈夫」を、数字にする。</h2>
       <p class="say">正常な機体の値を一度おぼえれば、次の機体が正常かどうかは
-      <b>見比べるだけで分かります。</b>ランプの明るさから推し量る必要はありません。</p>
+      <b>見比べるだけで分かります。</b>「たぶん大丈夫」で済ませずに済みます。</p>
     </div>
     <div class="rev">
       <div class="oled lg"> 0.34A  LIM 0.50
@@ -395,23 +395,15 @@ footer{padding:0 0 90px;color:#5f6c78;font:700 .68rem var(--mono);letter-spacing
 
 <section>
   <div class="wrap rev">
-    <div class="label">Compare</div>
-    <h2>電流を制限するだけの保護から、「測ってから通す」へ。</h2>
-    <div class="tw"><table>
-      <tr><th></th><th>電流制限だけの保護</th><th>Smoke Stopper</th></tr>
-      <tr><td class="k">通電前の短絡検出</td><td class="no">なし</td><td class="yes">あり</td></tr>
-      <tr><td class="k">電流の把握</td><td class="no">明るさから推測</td><td class="yes">数値で表示</td></tr>
-      <tr><td class="k">電流上限</td><td class="no">固定</td><td class="yes">5段階</td></tr>
-      <tr><td class="k">異常時の動作</td><td class="no">制限のみ</td><td class="yes">遮断してラッチ</td></tr>
-      <tr><td class="k">異常の原因</td><td class="no">不明</td><td class="yes">4種類を識別</td></tr>
-      <tr><td class="k">電源</td><td class="no">バッテリーが必要</td><td class="yes">USB-C PD充電器</td></tr>
-    </table></div>
+    <div class="label">Limits</div>
+    <h2>できること、できないこと。</h2>
+    <p class="say">この製品は、通電前の短絡と、設定した上限を超える電流を見つけます。
+    <b>それ以外の故障は見つけられません。</b></p>
 
     <div class="caveat">
-      <b>できないこと</b>
-      <p>この製品は、通電前の短絡と、設定した上限を超える電流を検出して遮断します。
-      ただし<b>あらゆる故障を見つけられるわけではありません。</b>
-      抵抗値が正常でも、通電してはじめて現れる不具合や、特定の条件でしか出ない不良はあります。
+      <b>検出できないもの</b>
+      <p>短絡はバッテリーの＋と−の間を測って判定します。そのため<b>モーターの内部短絡のように、電源ラインから切り離されている不具合は分かりません。</b>
+      通電してはじめて現れるもの、特定の条件でしか出ないものも同じです。
       また、検出して遮断するまでのわずかな時間に部品が損傷する可能性は残ります。
       機体が無事であることを保証するものではなく、最終的な判断は使う方にお任せしています。</p>
     </div>
