@@ -117,7 +117,7 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
 <div class="wrap">
 
 <header>
-  <div class="kicker">SMOKE STOPPER / USER GUIDE / Rev1.1</div>
+  <div class="kicker">SMOKE STOPPER / USER GUIDE / Rev1.1 / FW v1.8</div>
   <h1>短絡を、<br>数値で止める。</h1>
   <p class="hero-lede">
     <strong>ドローンの初回通電を、勘ではなく数値で確認する。</strong><br>
@@ -162,7 +162,7 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
   <p class="lead">市販のショートストッパーが「光る／光らない」で終わるのに対し、この製品は<b>どれだけ電流が流れたか</b>を数値で確認できます。</p>
   <div class="tw"><table>
     <tr><th>機能</th><th>できること</th></tr>
-    <tr><td>電源</td><td>USB-C PD充電器から9V / 15V / 20Vを取得。3S〜5S相当の確認に対応</td></tr>
+    <tr><td>電源</td><td>USB-C PD充電器から9V / 12V / 15V / 20Vを取得。3S〜5S相当の確認に対応</td></tr>
     <tr><td>電流制限</td><td>0.1 / 0.3 / 0.5 / 0.8 / 1.2Aの5段階</td></tr>
     <tr><td>計測</td><td>電圧・電流・ピーク電流・負荷抵抗を表示</td></tr>
     <tr><td>事前診断</td><td>通電前に出力側の短絡を確認できる</td></tr>
@@ -209,7 +209,7 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
 <section>
   <div class="section-head"><span class="num">03</span><h2>準備するもの</h2></div>
   <div class="callout-grid">
-    <div class="mini"><b>USB-C PD充電器</b><p>9V / 15V / 20V対応。ノートPC用の45W以上を推奨。</p></div>
+    <div class="mini"><b>USB-C PD充電器</b><p>9V / 12V / 15V / 20V対応。ノートPC用の45W以上を推奨。</p></div>
     <div class="mini"><b>USB-Cケーブル</b><p>PD対応品を使用。充電専用の細いケーブルは避けてください。</p></div>
     <div class="mini"><b>機体側ケーブル</b><p>XT60 または XT30。</p></div>
     <div class="mini"><b>設置場所</b><p>基板が露出している場合は金属面に置かないでください。底面ケースに取り付けて使用。</p></div>
@@ -225,11 +225,11 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
   <p class="lead">最初は<b>0.5A</b>から。低い上限で安全側から確認し、必要な場合だけ一段ずつ上げます。</p>
   <ol class="steps">
     <li><div><b>USB-C PD充電器を接続</b><span>機体はまだ接続しません。画面に <span class="code">READY</span> が表示されます。</span></div></li>
-    <li><div><b>電流上限を設定</b><span>ダイヤルを押して <span class="code">CURRENT LIMIT</span> を表示。回して選択します。初期値は <span class="code">0.5A</span>。</span></div></li>
+    <li><div><b>電流上限を設定</b><span>ダイヤルを押して <span class="code">CURRENT LIMIT</span> を表示。回して選択します。<b>設定は本体が記憶する</b>ので、2回目以降この操作は不要です（初期値 <span class="code">0.5A</span>）。</span></div></li>
     <li><div><b>電圧を設定</b><span>もう一度ダイヤルを押して <span class="code">USB-C PD</span>。機体のセル数に近い電圧を選び、押して決定。</span></div></li>
     <li><div><b>機体を接続</b><span>XT60またはXT30の<b>どちらか一方</b>だけに接続します。</span></div></li>
     <li><div><b>通電前チェック</b><span>ボタンを短く押します。<span class="code">OK</span>ならもう一度短く押して通電、<span class="code">SHORT</span>なら通電せず原因を確認。</span></div></li>
-    <li><div><b>通電</b><span>チェック結果の画面でボタンを短く押します。緑点滅（立ち上げ中）→緑点灯（通電中）なら正常です。</span></div></li>
+    <li><div><b>通電</b><span>チェック結果の画面でボタンを短く押します。緑が速く点滅（立ち上げ中）→ゆっくり点滅（通電中）なら正常です。</span></div></li>
     <li><div><b>数値を見る</b><span>現在電流、<span class="code">PK</span>、<span class="code">LOAD</span>を確認。正常な機体の値と比較します。</span></div></li>
     <li><div><b>停止してから機体を外す</b><span>ボタンを押して出力を停止。<b>停止確認後に</b>機体を取り外してください。</span></div></li>
   </ol>
@@ -284,7 +284,7 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
   <p class="lead">電源を本格的に入れる前に、出力側の短絡を確認します。結果が出るまで1〜2秒かかります。</p>
   <div class="display"><pre>PRE-POWER CHECK
  0.9R
-SHORT  hold=force</pre></div>
+SHORT  hold=force n3</pre></div>
   <p class="caption">ボタンを短く押すと開始。結果表示後、ボタンで通電／ダイヤルで中止。</p>
   <div class="tw"><table>
     <tr><th>表示</th><th>意味</th><th>対応</th></tr>
@@ -294,15 +294,29 @@ SHORT  hold=force</pre></div>
     <tr><td class="mono">SHORT&nbsp;&nbsp;hold=force</td><td>短絡</td><td><b>通電しない。まず短絡箇所を確認。</b>短押しでは通電できません。どうしても通す場合のみ長押しで強行できます</td></tr>
     <tr><td class="mono">EXT VOLTAGE - abort</td><td>出力側に電圧が残っている</td><td>機体のバッテリーが接続されたままでないか確認。<b>直前に通電した場合は、放電するまで待って</b>やり直してください</td></tr>
   </table></div>
+
+    <h3>末尾の n は測定ノイズの目安</h3>
+    <p><span class="code">n3</span> のように付く数値は、測定中のノイズの大きさです。小さいほど抵抗値が正確に出ています。</p>
+    <div class="tw"><table>
+      <tr><th>表示</th><th>状態</th><th>抵抗値の読み方</th></tr>
+      <tr><td class="mono">n10 未満</td><td>良好</td><td>そのまま読んで構いません</td></tr>
+      <tr><td class="mono">n30 以上</td><td>ノイズが大きい</td><td>抵抗値は目安として読んでください。<b>判定そのものは安全側に働きます</b></td></tr>
+    </table></div>
+    <div class="alert">
+      <b>正確な抵抗値が知りたいときは、マイコンのUSB-C端子に5V電源をつなぐ</b>
+      <p>モバイルバッテリーで構いません。パソコンにつなぐ必要はありません。内部の電源回路が休止してノイズが消え、<span class="code">n</span> が一桁まで下がります。</p>
+      <p>つながない場合でも<b>異常を見逃すことはありません。</b>ノイズが大きいときは安全側に倒して判定します。そのぶん、正常な機体を <span class="code">SUSPECT</span> と表示することがあります。</p>
+    </div>
 </section>
 
 <section>
   <div class="section-head"><span class="num">08</span><h2>ランプで、離れていても状態を確認</h2></div>
   <div class="tw"><table>
     <tr><th>ランプ</th><th>状態</th><th>意味</th></tr>
-    <tr><td class="greentxt">● 緑 点灯</td><td>待機 / 正常通電</td><td>通常状態</td></tr>
-    <tr><td class="greentxt">● 緑 点滅</td><td>立ち上げ中</td><td>コンデンサを充電中</td></tr>
-    <tr><td class="yellowtxt">● 黄 点灯</td><td>上限接近</td><td>電流が上限に近づいている</td></tr>
+    <tr><td class="greentxt">● 緑 点灯</td><td>待機</td><td>出力は止まっています</td></tr>
+    <tr><td class="greentxt">● 緑 速い点滅</td><td>立ち上げ中</td><td>コンデンサを充電中</td></tr>
+    <tr><td class="greentxt">● 緑 ゆっくり点滅</td><td>通電中</td><td><b>出力が生きています</b></td></tr>
+    <tr><td class="yellowtxt">● 黄 ゆっくり点滅</td><td>通電中・上限接近</td><td>電流が上限に近づいています</td></tr>
     <tr><td class="redtxt">● 赤 点滅</td><td>遮断</td><td>点滅回数が原因を示す</td></tr>
   </table></div>
   <h3>遮断すると、画面に理由が出ます</h3>
@@ -387,7 +401,8 @@ SHORT  hold=force</pre></div>
   <div class="tw"><table>
     <tr><th>項目</th><th>仕様</th></tr>
     <tr><td>基板リビジョン</td><td class="mono">Rev1.1</td></tr>
-    <tr><td>入力</td><td class="mono">USB-C PD 9V / 15V / 20V</td></tr>
+      <tr><td>対応ファームウェア</td><td class="mono">v1.8</td></tr>
+    <tr><td>入力</td><td class="mono">USB-C PD 9V / 12V / 15V / 20V</td></tr>
     <tr><td>入力電圧範囲</td><td class="mono">6.5V〜27V</td></tr>
     <tr><td>出力</td><td class="mono">XT60 / XT30（内部で共通）</td></tr>
     <tr><td>電流上限</td><td class="mono">0.1 / 0.3 / 0.5 / 0.8 / 1.2 A</td></tr>
@@ -397,8 +412,9 @@ SHORT  hold=force</pre></div>
     <tr><td>ケース込み寸法</td><td class="mono">55.2 × 49.3 × 6.6 mm（コネクタ突出を除く）</td></tr>
   </table></div>
   <div class="alert">
-    <b>この説明書は Rev1.1 用です</b>
+    <b>この説明書は Rev1.1 / ファームウェア v1.8 用です</b>
     <p>基板裏面に <span class="code">SmokeStopper Rev1.1</span> と印字があります。別のリビジョンでは電流上限や表示画面が異なりますので、対応する説明書をご覧ください。</p>
+      <p><b>ファームウェアの版数は本体で確認できます。</b>ダイヤルを3回押すと <span class="code">FIRMWARE</span> の画面になり、版数とビルド日時が表示されます。電源投入直後の2秒間にも同じ内容が出ます。</p>
   </div>
   <div class="alert yellow">
     <b>6S（25.2V）の実電圧では試験できません</b>
