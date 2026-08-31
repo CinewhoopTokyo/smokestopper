@@ -1,14 +1,15 @@
 # Smoke Stopper
 
-ドローン用 短絡保護治具の取扱説明書。
+ドローンの初回通電のための測定器。
 
-**取扱説明書 → https://cinewhooptokyo.github.io/smokestopper/**
+**製品ページ → https://cinewhooptokyo.github.io/smokestopper/**
+**取扱説明書 → https://cinewhooptokyo.github.io/smokestopper/manual.html**
 
 組み上げたドローンの初回通電を、電流を制限した状態で行うための治具です。
 電流・電圧・ピーク電流・負荷抵抗を数値で表示し、異常があれば自動で遮断します。
 
 ```
-入力        USB-C PD  9V / 15V / 20V
+入力        USB-C PD  9V / 12V / 15V / 20V
 出力        XT60 / XT30
 電流上限     0.1 / 0.3 / 0.5 / 0.8 / 1.2 A
 表示        有機EL 0.91インチ 128×32
