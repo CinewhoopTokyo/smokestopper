@@ -202,7 +202,7 @@ footer{padding:44px 0 80px;color:var(--muted);font:600 .7rem var(--mono);letter-
     <tr><td class="mono">05</td><td>コントローラー</td><td>側面USB-Cは記録用。通電には使用しない</td></tr>
     <tr><td class="mono">06</td><td>ダイヤル</td><td>回して選択、<b>押し込んで</b>決定。押し込みスイッチを内蔵しています</td></tr>
     <tr><td class="mono">07</td><td>ボタン</td><td>通電・停止・遮断解除・通電前チェック</td></tr>
-    <tr><td class="mono">08</td><td>ランプ</td><td>緑・黄・赤で状態を表示</td></tr>
+    <tr><td class="mono">08</td><td>LED</td><td>緑・黄・赤で状態を表示</td></tr>
   </table></div>
 </section>
 
@@ -310,9 +310,9 @@ SHORT  hold=force n3</pre></div>
 </section>
 
 <section>
-  <div class="section-head"><span class="num">08</span><h2>ランプで、離れていても状態を確認</h2></div>
+  <div class="section-head"><span class="num">08</span><h2>LEDで、離れていても状態を確認</h2></div>
   <div class="tw"><table>
-    <tr><th>ランプ</th><th>状態</th><th>意味</th></tr>
+    <tr><th>LED</th><th>状態</th><th>意味</th></tr>
     <tr><td class="greentxt">● 緑 点灯</td><td>待機</td><td>出力は止まっています</td></tr>
     <tr><td class="greentxt">● 緑 速い点滅</td><td>立ち上げ中</td><td>コンデンサを充電中</td></tr>
     <tr><td class="greentxt">● 緑 ゆっくり点滅</td><td>通電中</td><td><b>出力が生きています</b></td></tr>
@@ -392,7 +392,7 @@ SHORT  hold=force n3</pre></div>
   <div class="qa"><b>通電した直後の通電前チェックで「EXT VOLTAGE」になる</b><p>機体のコンデンサに電荷が残っています。放電まで数分かかることがあります。充電されたままでは正しい抵抗値を測れないため、あえて中止しています。</p></div>
   <div class="qa"><b>設定画面を開いたら出力が止まった</b><p>安全のため、設定画面に入ると出力を切ります。設定後にもう一度ボタンを押して通電してください。</p></div>
   <div class="qa"><b>電源を入れ直すと設定が戻る</b><p>設定保存には対応していません。毎回設定してください。</p></div>
-  <div class="qa"><b>停止後も機体のランプが少し光る</b><p>機体側コンデンサに残った電荷です。しばらくすると消えます。</p></div>
+  <div class="qa"><b>停止後も機体のLEDが少し光る</b><p>機体側コンデンサに残った電荷です。しばらくすると消えます。</p></div>
   <div class="qa"><b>ダイヤルを回しても値が変わらない</b><p>設定画面に入っているか確認してください。待機中はダイヤルを回しても値は変わりません。</p></div>
 </section>
 
